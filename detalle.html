@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "cargando">cargando datos</p>
+    <img id = "gif" src="https://colossalmedia.com/wp-content/uploads/2019/06/loading-bananas.gif" >
+
+    
+    <p id="error"></p>
+    <center>
+        <a href="index.html"><img width="20" height="20" src="data:image/png;base64,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"></a>
+        <h1 id="id"></h1>
+        <h1 id="titulo"></h1>
+        <img id="imagen">
+    </center>
+
+    <script>
+        const url = new URL(window.location.href)
+        console.log(url);
+        const parametro = url.searchParams;
+        const id = parametro.get("id");
+        console.log(id);
+        document.getElementById("id").innerHTML = id;
+
+        const urlDetalle = `https://jsonplaceholder.typicode.com/photos/${id}`;
+        fetch(urlDetalle)
+            .then(response => response.json())
+            .then(foto => {
+                document.getElementById("titulo").innerHTML = foto.title;
+                document.getElementById("imagen").src = foto.thumbnailUrl;
+            })
+            .catch(error => {
+                document.getElementById("error").innerHTML = error.message;
+            })
+            .finally(() => {
+                document.getElementById("cargando").innerHTML = "";
+                document.getElementById("gif").src = "";
+                console.log("proceso terminado");
+            })
+    </script>
+</body>
+</html>
